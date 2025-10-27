@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Mudar Cor de Fundo</title>
+  <style>
+    body {
+      background-color: lightgray;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin-top: 100px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #6a5acd;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2>Mudar Cor de Fundo</h2>
+  <button onclick="mudarCor()">Clique para mudar a cor</button>
+
+  <script>
+    const cores = ['red', 'blue', 'green', 'orange', 'purple'];
+
+    function mudarCor() {
+      const corAleatoria = cores[Math.floor(Math.random() * cores.length)];
+      document.body.style.backgroundColor = corAleatoria;
+    }
+  </script>
+  
+</body>
+</html>
